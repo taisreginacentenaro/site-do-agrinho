@@ -1,90 +1,112 @@
-/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Cabeçalho */
 header {
-    background: #4CAF50; /* Verde vibrante */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    background-color: #3b8d6f;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5rem;
 }
 
-header p {
-    font-size: 1.2rem;
+header nav ul {
+    list-style: none;
+    display: flex;
 }
 
-/* Seções Principais */
-main section {
-    padding: 20px;
-    margin-bottom: 10px;
-    background: #fff;
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.intro {
+    background-color: #fff;
+    text-align: center;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-main section h2 {
-    color: #388E3C; /* Verde mais escuro */
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
+.intro h2 {
+    font-size: 2rem;
+    color: #3b8d6f;
     margin-bottom: 20px;
 }
 
-/* Imagens */
-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
+.intro p {
+    font-size: 1.2rem;
+    color: #333;
 }
 
-/* Listas */
-ul {
-    list-style: none;
-    padding: 0;
+.benefits {
+    background-color: #e1f7e1;
+    border-radius: 8px;
+    padding: 30px;
 }
 
-ul li {
-    background: #e8f5e9; /* Verde claro */
-    margin-bottom: 10px;
-    padding: 10px;
-    border-left: 5px solid #66BB6A;
-    border-radius: 4px;
-}
-
-/* Rodapé */
-footer {
-    background: #333;
-    color: #fff;
+.benefits h2 {
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
+    font-size: 2rem;
+    color: #3b8d6f;
+    margin-bottom: 20px;
 }
 
-/* Responsividade Básica */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-    header h1 {
-        font-size: 2rem;
-    }
+.benefits ul {
+    list-style: none;
+}
+
+.benefits ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #3b8d6f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
 }
